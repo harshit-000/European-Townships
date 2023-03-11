@@ -23,7 +23,7 @@ int main(){
     #endif
     int t;
     cin >> t;
-
+    int a = 1;
     while(t--) {
         int n;
         cin >> n;
@@ -55,8 +55,10 @@ int main(){
         double regular_paint_qty = regular_walls * REGULAR_PAINT_AMOUNT;
         double total_paint_time = calculate_paint_hours(accent_walls,regular_walls);
 
+        cout << "Case #" << a << ": ";
+
         cout << fixed << setprecision(2) << total_paint_time << "," << accent_paint_qty << "," << regular_paint_qty << "\n";
-        
-    }
+        a++;
+    }   
     return 0;
 }
